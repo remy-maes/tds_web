@@ -1,0 +1,25 @@
+body {
+	font-family: serif;
+	color: gray;
+}
+h1 {
+	color: blue;
+	font-family: sans-serif;
+}
+#teste{
+	color: red; 
+	font-size: 20px;
+	font-weight: bold;
+	margin-top: 25;
+}
+.title{
+	font-size: 20px;
+	text-decoration: underline
+}
+.gras {
+	font-weight: 900;
+	color: rgb(35, 46, 143)
+}
+h1, h2, :hover p span {
+	background-color: black;
+}
