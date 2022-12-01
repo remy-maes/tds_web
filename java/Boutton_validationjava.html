@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>APP JS</title>
+</head>
+<body>
+    <form id="userForm">
+        <input type="text" id="nom" placeholder="Votre Nom">
+        <input type="text" id="prenom" placeholder="Votre prenom">
+        <input type="button" id="btValidation" value="valider">
+    </form>
+    <div id="nomComplet"></div>
+</body>
+<script>
+    let update=function() {
+        let nom=document.forms[0].nom.value;
+        let prenom=document.forms[0].prenom.value;
+        let nomComplet=`${nom} ${prenom}`;
+        document.getElementById('nomComplet').innerHTML=nomComplet;
+        return false;
+    };
+    //document.getElementById('userForm').addEventListener('keyup', update);
+    document.getElementById('btValidation').addEventListener('click', update);
+</script>
+</html>
